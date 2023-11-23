@@ -32,14 +32,15 @@ body {
 
 #lifter-infos {
     color: white;
-    width: 43%;
+    width: 40%;
 }
 
 #lift-infos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 57%;
+    width: 60%;
+    height: 80%;
 }
 
 .elipses {
@@ -61,31 +62,50 @@ body {
 
 .box {
     background-color: var(--bg-white);
-    border-radius: 7px;
+    border-radius: 5px;
     margin: 5px;
     padding: 6px 12px 6px;
 }
 
 #current-lift {
-    width: 52%;
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 100%;
 }
 
 .current-lift {
     font-size: x-large;
     font-weight: bold;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.current-lift-attempt-success {
+#attempts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.attempt {
+    width: 52px;
+}
+
+.attempt-success {
     background-color: green;
     color: white;
 }
 
-.current-lift-attempt-fail {
+.attempt-fail {
     background-color: red;
     color: white
 }
 
-.current-lift-attempt-ongoing {
+.attempt-ongoing {
     -webkit-box-shadow: inset 0px 0px 0px 1px white;
     -moz-box-shadow: inset 0px 0px 0px 1px white;
     box-shadow: inset 0px 0px 0px 1px white;
@@ -159,7 +179,7 @@ body {
 .subtotal-forecast-name {
     background-color: var(--primary);
     color: white;
-    border-radius: 7px;
+    border-radius: 5px;
     padding: 3px 8px 3px;
     margin-right: 15px;
 }
