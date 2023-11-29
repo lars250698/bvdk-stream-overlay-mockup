@@ -1,6 +1,6 @@
 :root {
-    --secondary: #FDF160;
-    --primary: #1C1F20;
+    --secondary: #BE0007;
+    --primary: #00497F;
     --bg-white: #f4f3f2;
 }
 
@@ -24,14 +24,14 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: var(--primary);
-    border-top: 5px solid var(--secondary);
-    border-bottom: 5px solid var(--secondary);
+    background-color: var(--bg-white);
+    border-top: 5px solid var(--primary);
+    border-bottom: 5px solid var(--primary);
     padding: 5px 30px 5px;
 }
 
 #lifter-infos {
-    color: white;
+    color: black;
     width: 40%;
 }
 
@@ -61,6 +61,7 @@ body {
 }
 
 .box {
+    border: 2px solid var(--primary);
     background-color: var(--bg-white);
     border-radius: 5px;
     margin: 5px;
@@ -77,6 +78,7 @@ body {
 .current-lift {
     font-size: x-large;
     font-weight: bold;
+    color: var(--primary);
     height: 45%;
     display: flex;
     align-items: center;
@@ -106,10 +108,10 @@ body {
 }
 
 .attempt-ongoing {
-    -webkit-box-shadow: inset 0px 0px 0px 1px white;
-    -moz-box-shadow: inset 0px 0px 0px 1px white;
-    box-shadow: inset 0px 0px 0px 1px white;
-    background-color: navy;
+    -webkit-box-shadow: inset 0px 0px 0px 2px white;
+    -moz-box-shadow: inset 0px 0px 0px 2px white;
+    box-shadow: inset 0px 0px 0px 2px white;
+    background-color: var(--primary);
     color: white;
 }
 
